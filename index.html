@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#personal-info">Personal Info</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+        </ul>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </nav>
+
+    <!-- Personal Info Section -->
+    <section id="personal-info">
+        <h1>Name: Iqra Naz</h1>
+        <p>Contact: 03160289050</p>
+        <p>Email: iqoonaz4321@gmail.com</p>
+        <img src="mypic.png" alt="Profile Picture">
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <button class="toggle-btn" data-target="education-list">Toggle Education</button>
+        <ul id="education-list" class="collapsible">
+            <li>Intermediate in medical science (2022)</li>
+            <li>Governor Initiative for Artificial Intelligence and Computing (2024)</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <button class="toggle-btn" data-target="skills-list">Toggle Skills</button>
+        <ul id="skills-list" class="collapsible">
+            <div>
+            <button style="background-color: palevioletred";>HTML</button>
+            <button style="background-color: palevioletred";>Css</button>
+             <button style="background-color: palevioletred";>JavaScript</button>
+             <button style="background-color: palevioletred";>TypeScript</button>
+             <button style="background-color: palevioletred";>React</button>
+             <button style="background-color: palevioletred";>Nextjs</button>
+            </div>
+        </ul>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <button class="toggle-btn" data-target="experience-list">Toggle Work Experience</button>
+        <ul id="experience-list" class="collapsible">
+            <b>Frontend Developer</b><br>
+            <p>Developed responsive web applications enhanced user interfaces and optimized performance</p>
+            
+        </ul>
+    </section>
+</center>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url();
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#theme-toggle {
+    background-color: #fff;
+    color: purple;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+};
+
+
+h1, h2 {
+    color: #0077cc;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 5px solid #0077cc;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 1px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible {
+    display: none;
+}
+
+.toggle-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.dark-mode nav {
+    background-color: #444;
+}
+
+.dark-mode nav ul li a {
+    color: #f4f4f4;
+}
+
+.dark-mode #theme-toggle {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #66ccff;
+}
+
+.dark-mode img {
+    border-color: #66ccff;
+}
